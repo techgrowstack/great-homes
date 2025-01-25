@@ -1,0 +1,12 @@
+/* @import './fonts.css'; */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
