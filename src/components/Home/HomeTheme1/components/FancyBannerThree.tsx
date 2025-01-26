@@ -31,8 +31,8 @@ const FancyBannerThree = () => {
       <Image
         src="/images/assets/ils_02.svg"
         alt="Illustration"
-        width={1200}
-        height={500}
+        width={1920}
+        height={650}
         className="shapes w-100 illustration"
       />
     </div>

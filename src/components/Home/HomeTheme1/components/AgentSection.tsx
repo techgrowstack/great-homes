@@ -81,8 +81,8 @@ const AgentSection = () => {
               <Image
                 src="/images/shape/title_shape_05.svg"
                 alt="Title Shape"
-                width={24}
-                height={24}
+                width={215}
+                height={17}
               />
             </h3>
             <p className="fs-22 mt-xs">

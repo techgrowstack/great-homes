@@ -25,8 +25,8 @@ const FeatureSectionTwo = () => {
                 <Image
                   src="/images/assets/screen_01.png"
                   alt="Screen"
-                  width={500}
-                  height={300}
+                  width={260}
+                  height={150}
                   className="lazy-img shapes screen_01"
                 />
               </div>

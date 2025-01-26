@@ -2677,7 +2677,8 @@ iframe {
 }
 
 .theme-main-menu .gap-one {
-	padding: 33px 40px
+	padding: 33px 40px;
+	transition: .4s;
 }
 
 .theme-main-menu .gap-two {

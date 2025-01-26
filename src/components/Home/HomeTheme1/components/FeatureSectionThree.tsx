@@ -60,8 +60,8 @@ const FeatureSectionThree = () => {
                 <Image
                   src="/images/assets/screen_12.png"
                   alt="Estimate Screen"
-                  width={500}
-                  height={300}
+                  width={384}
+                  height={288}
                   className="w-100"
                 />
               </div>

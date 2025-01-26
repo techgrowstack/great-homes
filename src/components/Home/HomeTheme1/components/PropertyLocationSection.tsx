@@ -48,7 +48,7 @@ const PropertyLocationSection = () => {
           <div className="title-one text-center mb-75 xl-mb-50 md-mb-30 wow fadeInUp">
             <h3>
               Explore Popular <span>
-                Location <Image src="/images/shape/title_shape_02.svg" alt="Title Shape" width={50} height={50} />
+                Location <Image src="/images/shape/title_shape_02.svg" alt="Title Shape" width={262} height={20} />
               </span>
             </h3>
             <p className="fs-22">Explore the latest listings & projects in diverse areas</p>

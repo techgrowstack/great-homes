@@ -13,8 +13,8 @@ const FancyBanner = () => {
                 <Image
                   src="/images/shape/title_shape_04.svg"
                   alt="Title Shape"
-                  width={24}
-                  height={24}
+                  width={258}
+                  height={18}
                 />
                 Deal for you.
               </h3>

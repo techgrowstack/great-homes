@@ -70,8 +70,8 @@ const FeedbackSection = () => {
                     <Image
                       src={item.ratingImage}
                       alt="Rating"
-                      width={50}
-                      height={50}
+                      width={151}
+                      height={87}
                       className="m-auto"
                     />
                     <p className="text-center m0 pt-10">

@@ -24,8 +24,8 @@ const FeatureSectionOne = () => {
               <Image 
                 src="/images/icon/icon_01.svg" 
                 alt="Buy a home" 
-                width={80} 
-                height={80} 
+                width={220} 
+                height={220} 
                 className="lazy-img m-auto icon" 
               />
               <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Buy a home</div>
@@ -39,8 +39,8 @@ const FeatureSectionOne = () => {
               <Image 
                 src="/images/icon/icon_02.svg" 
                 alt="Rent a home" 
-                width={80} 
-                height={80} 
+                width={220} 
+                height={220} 
                 className="lazy-img m-auto icon" 
               />
               <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Rent a home</div>
@@ -54,8 +54,8 @@ const FeatureSectionOne = () => {
               <Image 
                 src="/images/icon/icon_03.svg" 
                 alt="Sell property" 
-                width={80} 
-                height={80} 
+                width={220} 
+                height={220} 
                 className="lazy-img m-auto icon" 
               />
               <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Sell property</div>

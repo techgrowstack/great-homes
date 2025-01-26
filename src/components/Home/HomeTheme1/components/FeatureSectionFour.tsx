@@ -33,8 +33,8 @@ const FeatureSectionFour = () => {
                   <Image
                     src="/images/icon/icon_07.svg"
                     alt="Create Account Icon"
-                    width={50}
-                    height={50}
+                    width={220}
+                    height={220}
                     className="m-auto icon"
                   />
                   <h5 className="mt-50 lg-mt-30 mb-15">Create Account</h5>
@@ -48,8 +48,8 @@ const FeatureSectionFour = () => {
                   <Image
                     src="/images/icon/icon_08.svg"
                     alt="Find Home Icon"
-                    width={50}
-                    height={50}
+                    width={220}
+                    height={220}
                     className="m-auto icon"
                   />
                   <h5 className="mt-50 lg-mt-30 mb-15">Find Home</h5>
@@ -64,8 +64,8 @@ const FeatureSectionFour = () => {
                   <Image
                     src="/images/icon/icon_09.svg"
                     alt="Quick Process Icon"
-                    width={50}
-                    height={50}
+                    width={220}
+                    height={220}
                     className="m-auto icon"
                   />
                   <h5 className="mt-50 lg-mt-30 mb-15">Quick Process</h5>
@@ -82,15 +82,15 @@ const FeatureSectionFour = () => {
       <Image
         src="/images/shape/shape_07.svg"
         alt="Background Shape 1"
-        width={200}
-        height={200}
+        width={336}
+        height={866}
         className="shapes shape_01"
       />
       <Image
         src="/images/shape/shape_08.svg"
         alt="Background Shape 2"
-        width={200}
-        height={200}
+        width={336}
+        height={866}
         className="shapes shape_02"
       />
     </div>

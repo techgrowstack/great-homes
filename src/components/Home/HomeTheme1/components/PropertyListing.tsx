@@ -57,7 +57,7 @@ const PropertyListing: React.FC = () => {
       <div className="container">
         <div className="position-relative">
           <div className="title-one text-center text-lg-start mb-45 xl-mb-30 lg-mb-20 wow fadeInUp">
-            <h3>New <span>Listings <img src="images/lazy.svg" data-src="images/shape/title_shape_03.svg" alt="" className="lazy-img" /></span></h3>
+            <h3>New <span>Listings <img src="/images/shape/title_shape_03.svg" alt="" className="lazy-img" /></span></h3>
             <p className="fs-22 mt-xs">Explore latest & featured properties for sale.</p>
           </div>
           <div className="row gx-xxl-5">
@@ -96,15 +96,15 @@ const PropertyListing: React.FC = () => {
                     <div className="address">{listing.address}</div>
                     <ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between">
                       <li className="d-flex align-items-center">
-                        <img src="images/lazy.svg" data-src="images/icon/icon_04.svg" alt="" className="lazy-img icon me-2" />
+                        <img src="/images/icon/icon_04.svg" alt="" className="lazy-img icon me-2" height={18} width={18} />
                         <span className="fs-16">{listing.sqft}</span>
                       </li>
                       <li className="d-flex align-items-center">
-                        <img src="images/lazy.svg" data-src="images/icon/icon_05.svg" alt="" className="lazy-img icon me-2" />
+                        <img src="/images/icon/icon_05.svg" alt="" className="lazy-img icon me-2" height={19} width={28} />
                         <span className="fs-16">{listing.beds}</span>
                       </li>
                       <li className="d-flex align-items-center">
-                        <img src="images/lazy.svg" data-src="images/icon/icon_06.svg" alt="" className="lazy-img icon me-2" />
+                        <img src="/images/icon/icon_06.svg" alt="" className="lazy-img icon me-2" height={18} width={18} />
                         <span className="fs-16">{listing.baths}</span>
                       </li>
                     </ul>
