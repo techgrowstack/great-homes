@@ -15,8 +15,8 @@ const FancyBannerThree = () => {
                   <Image
                     src="/images/shape/title_shape_08.svg"
                     alt="Title Shape"
-                    width={24}
-                    height={24}
+                    width={327}
+                    height={18}
                   />
                 </span>{" "}
                 To contact Us.

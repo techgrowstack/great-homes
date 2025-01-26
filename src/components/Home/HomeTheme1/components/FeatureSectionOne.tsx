@@ -10,8 +10,8 @@ const FeatureSectionOne = () => {
               <Image 
                 src="/images/shape/title_shape_01.svg" 
                 alt="" 
-                width={30} 
-                height={10} 
+                width={345} 
+                height={23} 
                 className="lazy-img"
               />
             </span>
