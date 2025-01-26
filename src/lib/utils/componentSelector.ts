@@ -1,4 +1,4 @@
-import HomeTheme1 from '@/components/Home/HomeTheme1';
+import HomeTheme1 from '@/components/Home/HomeTheme1/HomeTheme1';
 import HomeTheme2 from '@/components/Home/HomeTheme2';
 import Header1 from '@/components/Header/Header1';
 import Header2 from '@/components/Header/Header2';

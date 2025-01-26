@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header';
 import Home from '@/components/Home';
 
 export const metadata = {
@@ -11,5 +13,12 @@ export const metadata = {
 export default async function HomePage() {
   
   // Meta tags for home page 
-  return <Home />
+  // return <Home />
+  return (
+    <>
+      <Header />
+        <Home />
+      <Footer />
+    </>
+  )
 }
