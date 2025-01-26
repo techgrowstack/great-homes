@@ -15,8 +15,8 @@ const FeatureSectionThree = () => {
                   <Image
                     src="/images/shape/title_shape_06.svg"
                     alt="Title Shape"
-                    width={24}
-                    height={24}
+                    width={260}
+                    height={17}
                   />{" "}
                   on your home.
                 </h3>
