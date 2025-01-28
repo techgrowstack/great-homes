@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const FooterComponent1 = () => {
   return (
@@ -21,7 +21,8 @@ const FooterComponent1 = () => {
                     </Link>
                   </div>
                   <p className="mb-60 lg-mb-40 md-mb-20">
-                    11910 Clyde Rapid Suite 70, Willyand, Virginia, United States
+                    11910 Clyde Rapid Suite 70, Willyand, Virginia, United
+                    States
                   </p>
                   <h6>CONTACT</h6>
                   <Link
@@ -33,17 +34,17 @@ const FooterComponent1 = () => {
                   <ul className="style-none d-flex align-items-center social-icon">
                     <li>
                       <Link href="#">
-                        <i className="fa-brands fa-square-facebook"></i>
+                        <i className="fa-brands fa-square-facebook" />
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        <i className="fa-brands fa-square-twitter"></i>
+                        <i className="fa-brands fa-square-twitter" />
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        <i className="fa-brands fa-square-instagram"></i>
+                        <i className="fa-brands fa-square-instagram" />
                       </Link>
                     </li>
                   </ul>

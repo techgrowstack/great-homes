@@ -11,14 +11,13 @@ export const metadata = {
 };
 
 export default async function HomePage() {
-  
-  // Meta tags for home page 
+  // Meta tags for home page
   // return <Home />
   return (
     <>
       <Header />
-        <Home />
+      <Home />
       <Footer />
     </>
-  )
+  );
 }

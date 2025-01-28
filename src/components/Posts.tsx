@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { Box, Button, Code, Group, LoadingOverlay, Text } from '@mantine/core';
 import { useFetch } from '@mantine/hooks';
 
@@ -27,7 +28,9 @@ export default function Posts() {
         </Button>
       </Group>
       <Box pos="relative" mt="md">
-        <Code block>{data ? JSON.stringify(data.slice(0, 3), null, 2) : 'Fetching'}</Code>
+        <Code block>
+          {data ? JSON.stringify(data.slice(0, 3), null, 2) : 'Fetching'}
+        </Code>
         <LoadingOverlay visible={loading} />
       </Box>
     </div>
