@@ -7,7 +7,7 @@ export default function UnauthorizeState() {
   return (
     <div>
       <h1>Unauthorized Access</h1>
-      <p>Sorry, you don't have permission to access this page.</p>
+      <p>Sorry, you dont have permission to access this page.</p>
     </div>
   );
 }

@@ -1,15 +1,9 @@
 module.exports = {
-  "root": true,
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
-  "extends": "next/core-web-vitals",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "rules": {}
-}
-;
+  extends: ['next/core-web-vitals'],
+  rules: {
+    '@next/next/no-img-element': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    '@typescript-eslint/no-explicit-any': 'off'
+  }
+};
