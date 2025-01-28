@@ -34,13 +34,13 @@ export default function HomeTheme1() {
   return (
     <MainLayout>
       <HeroBanner />
-      <FeedbackSection />
+      {/* <FeedbackSection /> */}
       <FeatureSectionOne />
       <FeatureSectionTwo />
-      <PropertyLocationSection />
+      {/* <PropertyLocationSection /> */}
       <PropertyListing />
       <FancyBanner />
-      <AgentSection />
+      {/* <AgentSection /> */}
       <FeatureSectionThree />
       <FeatureSectionFour />
       <FancyBannerTwo />

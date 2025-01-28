@@ -82,7 +82,7 @@ const PropertyLocationSection = () => {
 };
 
 // Custom Arrow Component
-const CustomArrow = ({ direction, onClick }: { direction: 'next' | 'prev'; onClick: () => void }) => {
+const CustomArrow = ({ direction, onClick }: { direction: 'next' | 'prev'; onClick?: () => void }) => {
   return (
     <button
     className={`slick-arrow ${direction === 'next' ? 'next-arrow end-0' : 'prev-arrow start-0'} 

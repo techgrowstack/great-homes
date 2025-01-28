@@ -97,15 +97,41 @@ const HeaderComponent1 = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link href="/index" className="dropdown-item">
+                      <Link href="/" className="dropdown-item">
                         <span>Home 01</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/index-2" className="dropdown-item">
+                      <Link href="/home2" className="dropdown-item">
                         <span>Home 02</span>
                       </Link>
                     </li>
+                    <li>
+                      <Link href="/home3" className="dropdown-item">
+                        <span>Home 03</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/home4" className="dropdown-item">
+                        <span>Home 04</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/home5" className="dropdown-item">
+                        <span>Home 05</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/home6" className="dropdown-item">
+                        <span>Home 06</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/home7" className="dropdown-item">
+                        <span>Home 07</span>
+                      </Link>
+                    </li>
+
                   </ul>
                 </li>
                 <li className="nav-item dropdown mega-dropdown-sm">
