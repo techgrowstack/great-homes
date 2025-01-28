@@ -23,7 +23,7 @@ const HeaderComponent2 = () => {
                   <li className="d-flex align-items-center login-btn-one">
                     <i className="fa-regular fa-lock" />
                     <a
-                      href="#"
+                      href="/"
                       data-bs-toggle="modal"
                       data-bs-target="#loginModal"
                       className="fw-500 tran3s"
@@ -91,7 +91,7 @@ const HeaderComponent2 = () => {
                     <li className="nav-item dropdown">
                       <a
                         className="nav-link dropdown-toggle"
-                        href="#"
+                        href="/"
                         role="button"
                         data-bs-toggle="dropdown"
                         data-bs-auto-close="outside"
@@ -116,7 +116,7 @@ const HeaderComponent2 = () => {
                     <li className="nav-item dropdown mega-dropdown-sm">
                       <a
                         className="nav-link dropdown-toggle"
-                        href="#"
+                        href="/"
                         role="button"
                         data-bs-toggle="dropdown"
                         data-bs-auto-close="outside"
@@ -133,7 +133,7 @@ const HeaderComponent2 = () => {
                     <li className="nav-item dropdown mega-dropdown-sm">
                       <a
                         className="nav-link dropdown-toggle"
-                        href="#"
+                        href="/"
                         role="button"
                         data-bs-toggle="dropdown"
                         data-bs-auto-close="outside"
@@ -150,7 +150,7 @@ const HeaderComponent2 = () => {
                     <li className="nav-item dropdown">
                       <a
                         className="nav-link dropdown-toggle"
-                        href="#"
+                        href="/"
                         role="button"
                         data-bs-toggle="dropdown"
                         data-bs-auto-close="outside"

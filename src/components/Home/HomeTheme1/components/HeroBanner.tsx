@@ -20,7 +20,10 @@ const HeroBanner = () => {
                 />
               </span>
             </h1>
-            <p className="fs-24 color-dark text-center pt-35 pb-35 wow fadeInUp" data-wow-delay="0.1s">
+            <p
+              className="fs-24 color-dark text-center pt-35 pb-35 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
               We’ve more than 745,000 apartments, place & plot.
             </p>
           </div>
@@ -34,36 +37,57 @@ const HeroBanner = () => {
                     <div className="col-xl-3 col-lg-4">
                       <div className="input-box-one border-left">
                         <Select
-                            variant="unstyled"
-                            label="I’m looking to..."
-                            placeholder="Select placeholder"
-                            data={['Buy Apartments', 'Rent Condos', 'Sell Houses', 'Rent Industrial','Sell Villas']}
+                          variant="unstyled"
+                          label="I’m looking to..."
+                          placeholder="Select placeholder"
+                          data={[
+                            'Buy Apartments',
+                            'Rent Condos',
+                            'Sell Houses',
+                            'Rent Industrial',
+                            'Sell Villas',
+                          ]}
                         />
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-4">
                       <div className="input-box-one border-left">
                         <Select
-                            variant="unstyled"
-                            label="Location"
-                            placeholder="Select placeholder"
-                            data={['Dhanmondi, Dhaka', 'Acapulco, Mexico', 'Berlin, Germany', 'Cannes, France','Delhi, India', 'Giza, Egypt', 'Havana, Cuba']}
+                          variant="unstyled"
+                          label="Location"
+                          placeholder="Select placeholder"
+                          data={[
+                            'Dhanmondi, Dhaka',
+                            'Acapulco, Mexico',
+                            'Berlin, Germany',
+                            'Cannes, France',
+                            'Delhi, India',
+                            'Giza, Egypt',
+                            'Havana, Cuba',
+                          ]}
                         />
                       </div>
                     </div>
                     <div className="col-xl-3 col-lg-4">
                       <div className="input-box-one border-left border-lg-0">
-                      <Select
-                            variant="unstyled"
-                            label="Location"
-                            placeholder="Price Range"
-                            data={['$10,000 - $200,000', '$200,000 - $300,000', '$300,000 - $400,000']}
+                        <Select
+                          variant="unstyled"
+                          label="Location"
+                          placeholder="Price Range"
+                          data={[
+                            '$10,000 - $200,000',
+                            '$200,000 - $300,000',
+                            '$300,000 - $400,000',
+                          ]}
                         />
                       </div>
                     </div>
                     <div className="col-xl-2">
                       <div className="input-box-one lg-mt-10">
-                        <button type="submit" className="fw-500 text-uppercase tran3s search-btn">
+                        <button
+                          type="submit"
+                          className="fw-500 text-uppercase tran3s search-btn"
+                        >
                           Search
                         </button>
                       </div>

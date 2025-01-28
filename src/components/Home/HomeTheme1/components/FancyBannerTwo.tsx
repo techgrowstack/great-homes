@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const FancyBannerTwo = () => {
   return (
@@ -8,7 +8,7 @@ const FancyBannerTwo = () => {
           <div className="col-lg-6">
             <div className="title-one text-center text-lg-start md-mb-40 pe-xl-5">
               <h3 className="text-white m-0">
-                Start your{" "}
+                Start your{' '}
                 <span>
                   Journey
                   <Image
@@ -17,7 +17,7 @@ const FancyBannerTwo = () => {
                     width={260}
                     height={17}
                   />
-                </span>{" "}
+                </span>{' '}
                 As a Retailer.
               </h3>
             </div>
@@ -26,11 +26,11 @@ const FancyBannerTwo = () => {
             <div className="form-wrapper me-auto ms-auto me-lg-0">
               <form action="#">
                 <input type="email" placeholder="Email address" />
-                <button>Get Started</button>
+                <button type="button">Get Started</button>
               </form>
               <div className="fs-16 mt-10 text-white">
-                Already an Agent?{" "}
-                <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Already an Agent?{' '}
+                <a href="/" data-bs-toggle="modal" data-bs-target="#loginModal">
                   Sign in.
                 </a>
               </div>

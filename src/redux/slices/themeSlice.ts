@@ -1,4 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 interface ThemeConfig {
   homeTheme: number;
@@ -12,6 +13,9 @@ interface ThemeState {
   config: ThemeConfig;
   isLoading: boolean;
   error: string | null;
+  mode: 'light' | 'dark' | 'system';
+  systemTheme: 'light' | 'dark';
+  mounted: boolean;
 }
 
 const initialState: ThemeState = {
@@ -24,10 +28,13 @@ const initialState: ThemeState = {
   },
   isLoading: false,
   error: null,
+  mode: 'system',
+  systemTheme: 'light',
+  mounted: false,
 };
 
 const themeSlice = createSlice({
-  name: "theme",
+  name: 'theme',
   initialState,
   reducers: {
     setThemeConfig: (state, action: PayloadAction<ThemeConfig>) => {
@@ -39,8 +46,26 @@ const themeSlice = createSlice({
     setError: (state, action: PayloadAction<string | null>) => {
       state.error = action.payload;
     },
+    setMode: (state, action: PayloadAction<'light' | 'dark' | 'system'>) => {
+      return {
+        ...state,
+        mode: action.payload,
+      };
+    },
+    setSystemTheme: (state, action: PayloadAction<'light' | 'dark'>) => {
+      return {
+        ...state,
+        systemTheme: action.payload,
+      };
+    },
+    setMounted: (state, action: PayloadAction<boolean>) => {
+      return {
+        ...state,
+        mounted: action.payload,
+      };
+    },
   },
 });
 
 export const { setThemeConfig, setLoading, setError } = themeSlice.actions;
-export const themeReducer = themeSlice.reducer; 
+export const themeReducer = themeSlice.reducer;

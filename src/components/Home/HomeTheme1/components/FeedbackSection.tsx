@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Slider from "react-slick";
+import Image from 'next/image';
+import Slider from 'react-slick';
 
 const FeedbackSection = () => {
   const settings = {
@@ -13,34 +13,34 @@ const FeedbackSection = () => {
 
   const feedbackData = [
     {
-      name: "Jonathan Harry",
-      location: "Milan, Italy",
-      image: "/images/media/img_01.jpg",
-      ratingImage: "/images/assets/rating_01.png",
-      ratingText: "13k rating",
-      ratingValue: "4.7 Rating",
+      name: 'Jonathan Harry',
+      location: 'Milan, Italy',
+      image: '/images/media/img_01.jpg',
+      ratingImage: '/images/assets/rating_01.png',
+      ratingText: '13k rating',
+      ratingValue: '4.7 Rating',
       feedback:
-        "Efficient, knowledgeable, & made our home search a smooth experience. Highly recommended agency!",
+        'Efficient, knowledgeable, & made our home search a smooth experience. Highly recommended agency!',
     },
     {
-      name: "Sofia Rena",
-      location: "New York, USA",
-      image: "/images/media/img_02.jpg",
-      ratingImage: "/images/assets/rating_01.png",
-      ratingText: "10k rating",
-      ratingValue: "4.5 Rating",
+      name: 'Sofia Rena',
+      location: 'New York, USA',
+      image: '/images/media/img_02.jpg',
+      ratingImage: '/images/assets/rating_01.png',
+      ratingText: '10k rating',
+      ratingValue: '4.5 Rating',
       feedback:
-        "People who are sentinels are definitely the working very hard now, so that they can enjoy the fruits.",
+        'People who are sentinels are definitely the working very hard now, so that they can enjoy the fruits.',
     },
     {
-      name: "Rashed Kabir",
-      location: "Dhaka, BD",
-      image: "/images/media/img_03.jpg",
-      ratingImage: "/images/assets/rating_01.png",
-      ratingText: "11k rating",
-      ratingValue: "4.8 Rating",
+      name: 'Rashed Kabir',
+      location: 'Dhaka, BD',
+      image: '/images/media/img_03.jpg',
+      ratingImage: '/images/assets/rating_01.png',
+      ratingText: '11k rating',
+      ratingValue: '4.8 Rating',
       feedback:
-        "They are very strict about themselves and their work, and do not have a carefree attitude",
+        'They are very strict about themselves and their work, and do not have a carefree attitude',
     },
   ];
 
@@ -49,7 +49,7 @@ const FeedbackSection = () => {
       <div className="main-content m-auto">
         <Slider {...settings}>
           {feedbackData.map((item, index) => (
-            <div key={index} className="item">
+            <div key={item.name} className="item">
               <div className="feedback-block-one text-center">
                 <div className="row align-items-center">
                   <div className="col-md-3">
@@ -75,7 +75,9 @@ const FeedbackSection = () => {
                       className="m-auto"
                     />
                     <p className="text-center m0 pt-10">
-                      <span className="fw-500 color-dark">{item.ratingText}</span>{" "}
+                      <span className="fw-500 color-dark">
+                        {item.ratingText}
+                      </span>{' '}
                       ({item.ratingValue})
                     </p>
                   </div>

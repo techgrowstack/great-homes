@@ -33,17 +33,17 @@ const FooterComponent1 = () => {
                   </Link>
                   <ul className="style-none d-flex align-items-center social-icon">
                     <li>
-                      <Link href="#">
+                      <Link href="/">
                         <i className="fa-brands fa-square-facebook" />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="/">
                         <i className="fa-brands fa-square-twitter" />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="/">
                         <i className="fa-brands fa-square-instagram" />
                       </Link>
                     </li>

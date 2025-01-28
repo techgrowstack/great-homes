@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const FeatureSectionFour = () => {
   return (
@@ -8,7 +8,7 @@ const FeatureSectionFour = () => {
           <div className="col-xl-8 m-auto">
             <div className="title-one text-center mb-35 lg-mb-20">
               <h3>
-                We’re here to help <br /> you get your{" "}
+                We’re here to help <br /> you get your{' '}
                 <span>
                   dream home
                   <Image

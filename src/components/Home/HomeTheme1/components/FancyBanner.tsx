@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 const FancyBanner = () => {
   return (
@@ -9,7 +9,7 @@ const FancyBanner = () => {
           <div className="col-lg-6 wow fadeInLeft">
             <div className="title-one mb-45 lg-mb-30">
               <h3 className="text-white">
-                Exclusive <span>Monthly</span>{" "}
+                Exclusive <span>Monthly</span>{' '}
                 <Image
                   src="/images/shape/title_shape_04.svg"
                   alt="Title Shape"
@@ -19,7 +19,8 @@ const FancyBanner = () => {
                 Deal for you.
               </h3>
               <p className="fs-24 text-white pe-xl-5 me-xxl-5">
-                Don't miss out on this personalized monthly exclusive offer for you.
+                Don't miss out on this personalized monthly exclusive offer for
+                you.
               </p>
             </div>
             <Link href="/listing_details_02" className="btn-six">
@@ -35,18 +36,18 @@ const FancyBanner = () => {
                     <h4 className="mb-70 sm-mb-40">Luxury fisa orkit villa.</h4>
                     <ul className="style-none d-flex action-icons">
                       <li>
-                        <Link href="#">
-                          <i className="fa-light fa-heart"></i>
+                        <Link href="/">
+                          <i className="fa-light fa-heart" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
-                          <i className="fa-light fa-bookmark"></i>
+                        <Link href="/">
+                          <i className="fa-light fa-bookmark" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
-                          <i className="fa-light fa-circle-plus"></i>
+                        <Link href="/">
+                          <i className="fa-light fa-circle-plus" />
                         </Link>
                       </li>
                     </ul>
@@ -83,8 +84,11 @@ const FancyBanner = () => {
                 <Link href="/listing_details_02" className="btn-three">
                   <span>Check Full Details</span>
                 </Link>
-                <Link href="/listing_details_02" className="btn-four rounded-circle">
-                  <i className="bi bi-arrow-up-right"></i>
+                <Link
+                  href="/listing_details_02"
+                  className="btn-four rounded-circle"
+                >
+                  <i className="bi bi-arrow-up-right" />
                 </Link>
               </div>
             </div>

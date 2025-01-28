@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const FancyBannerThree = () => {
   return (
@@ -9,7 +9,7 @@ const FancyBannerThree = () => {
           <div className="col-xl-7 col-md-8 m-auto">
             <div className="title-one mb-45 md-mb-30">
               <h2>
-                Any Inquiry?{" "}
+                Any Inquiry?{' '}
                 <span>
                   Feel free
                   <Image
@@ -18,7 +18,7 @@ const FancyBannerThree = () => {
                     width={327}
                     height={18}
                   />
-                </span>{" "}
+                </span>{' '}
                 To contact Us.
               </h2>
             </div>

@@ -54,7 +54,7 @@ const HeaderComponent1 = () => {
               <ul className="d-flex align-items-center style-none">
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     data-bs-toggle="modal"
                     data-bs-target="#loginModal"
                     className="btn-one"
@@ -110,7 +110,7 @@ const HeaderComponent1 = () => {
                   <li className="nav-item dropdown">
                     <a
                       className="nav-link dropdown-toggle"
-                      href="#"
+                      href="/"
                       role="button"
                       data-bs-toggle="dropdown"
                       data-bs-auto-close="outside"
@@ -159,7 +159,7 @@ const HeaderComponent1 = () => {
                   <li className="nav-item dropdown mega-dropdown-sm">
                     <a
                       className="nav-link dropdown-toggle"
-                      href="#"
+                      href="/"
                       role="button"
                       data-bs-toggle="dropdown"
                       data-bs-auto-close="outside"
@@ -199,7 +199,7 @@ const HeaderComponent1 = () => {
                   <li className="nav-item dropdown mega-dropdown-sm">
                     <a
                       className="nav-link dropdown-toggle"
-                      href="#"
+                      href="/"
                       role="button"
                       data-bs-toggle="dropdown"
                       data-bs-auto-close="outside"

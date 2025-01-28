@@ -7,4 +7,4 @@ import { fetcher } from './fetcher';
 import { logError, logInfo } from './logger';
 import { displayNumbers } from './utils';
 
-export { displayNumbers, fetcher, getDateCompare, logError, logInfo};
+export { displayNumbers, fetcher, getDateCompare, logError, logInfo };

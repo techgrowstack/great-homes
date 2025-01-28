@@ -1,8 +1,6 @@
 'use client';
-
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom'; // This is used to import createPortal.
 import { createPortal } from 'react-dom';
 
 interface SidebarProps {
@@ -19,6 +17,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen }) => {
     container.id = 'sidebar-root';
     document.body.appendChild(container);
     setPortalContainer(container);
+    console.log(isSidebarOpen);
+    
 
     return () => {
       if (document.body.contains(container)) {
@@ -68,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen }) => {
                           <img
                             src="/images/listing/img_69.jpg"
                             className="w-100"
-                            alt="Listing Image"
+                            alt="Listing Image 1"
                           />
                           <div className="img-slider-btn">
                             03 <i className="fa-regular fa-image" />
@@ -102,7 +102,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen }) => {
                             6391 Elgin St. Celina
                           </div>
                         </div>
-                        <a href="#" className="btn-four mb-5">
+                        <a href="/" className="btn-four mb-/">
                           <i className="bi bi-arrow-up-right" />
                         </a>
                       </div>
@@ -126,22 +126,22 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen }) => {
               </div>
               <ul className="style-none d-flex flex-wrap w-100 justify-content-between align-items-center social-icon pt-25 mt-auto">
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <i className="fa-brands fa-whatsapp" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <i className="fa-brands fa-x-twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <i className="fa-brands fa-instagram" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <i className="fa-brands fa-viber" />
                   </a>
                 </li>
