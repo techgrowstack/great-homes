@@ -1,4 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 interface ThemeConfig {
   homeTheme: number;
@@ -27,7 +28,7 @@ const initialState: ThemeState = {
 };
 
 const themeSlice = createSlice({
-  name: "theme",
+  name: 'theme',
   initialState,
   reducers: {
     setThemeConfig: (state, action: PayloadAction<ThemeConfig>) => {
@@ -43,4 +44,4 @@ const themeSlice = createSlice({
 });
 
 export const { setThemeConfig, setLoading, setError } = themeSlice.actions;
-export const themeReducer = themeSlice.reducer; 
+export const themeReducer = themeSlice.reducer;

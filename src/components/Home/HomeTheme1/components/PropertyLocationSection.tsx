@@ -3,6 +3,33 @@ import Link from 'next/link';
 import Slider from 'react-slick';
 
 const PropertyLocationSection = () => {
+  
+  const CustomArrow = ({
+    direction,
+    onClick,
+  }: {
+    direction: 'next' | 'prev';
+    onClick?: () => void;
+  }) => {
+    return (
+      <button
+        className={`slick-arrow ${direction === 'next' ? 'next-arrow end-0' : 'prev-arrow start-0'} 
+      position-absolute top-50 translate-middle-y rounded-circle bg-white shadow border-0 d-flex justify-content-center align-items-center`}
+        aria-label={direction === 'next' ? 'Next' : 'Previous'}
+        onClick={onClick} // Trigger slider action
+        style={{
+          height: '50px',
+          width: '50px',
+          zIndex: 10,
+        }}
+      >
+        <i
+          className={`fa-sharp fa-light fa-angle-${direction === 'next' ? 'right' : 'left'}`}
+          style={{ fontSize: '20px', color: '#333' }}
+        />
+      </button>
+    );
+  };
   const settings = {
     infinite: true, // Set to true to enable infinite scrolling
     speed: 500,
@@ -47,16 +74,31 @@ const PropertyLocationSection = () => {
         <div className="position-relative z-1">
           <div className="title-one text-center mb-75 xl-mb-50 md-mb-30 wow fadeInUp">
             <h3>
-              Explore Popular <span>
-                Location <Image src="/images/shape/title_shape_02.svg" alt="Title Shape" width={262} height={20} />
+              Explore Popular{' '}
+              <span>
+                Location{' '}
+                <Image
+                  src="/images/shape/title_shape_02.svg"
+                  alt="Title Shape"
+                  width={262}
+                  height={20}
+                />
               </span>
             </h3>
-            <p className="fs-22">Explore the latest listings & projects in diverse areas</p>
+            <p className="fs-22">
+              Explore the latest listings & projects in diverse areas
+            </p>
           </div>
 
           <Slider {...settings} className="property-location-slider-one">
             {/* Slider items */}
-            {['img_05.jpg', 'img_06.jpg', 'img_07.jpg', 'img_08.jpg', 'img_09.jpg'].map((img, index) => (
+            {[
+              'img_05.jpg',
+              'img_06.jpg',
+              'img_07.jpg',
+              'img_08.jpg',
+              'img_09.jpg',
+            ].map((img, index) => (
               <div className="item" key={index}>
                 <div className="location-card-wrap">
                   <div
@@ -81,26 +123,5 @@ const PropertyLocationSection = () => {
   );
 };
 
-// Custom Arrow Component
-const CustomArrow = ({ direction, onClick }: { direction: 'next' | 'prev'; onClick?: () => void }) => {
-  return (
-    <button
-    className={`slick-arrow ${direction === 'next' ? 'next-arrow end-0' : 'prev-arrow start-0'} 
-    position-absolute top-50 translate-middle-y rounded-circle bg-white shadow border-0 d-flex justify-content-center align-items-center`}
-    aria-label={direction === 'next' ? 'Next' : 'Previous'}
-    onClick={onClick} // Trigger slider action
-    style={{
-      height: '50px',
-      width: '50px',
-      zIndex: 10,
-    }}
-  >
-    <i
-      className={`fa-sharp fa-light fa-angle-${direction === 'next' ? 'right' : 'left'}`}
-      style={{ fontSize: '20px', color: '#333' }}
-    />
-  </button>
-  );
-};
 
 export default PropertyLocationSection;

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const FeatureSectionTwo = () => {
   return (
@@ -10,17 +10,22 @@ const FeatureSectionTwo = () => {
             <div className="block-one w-100 h-100">
               <div className="position-relative z-1 h-100">
                 <h3 className="mb-55">Secure your family's dream home.</h3>
-                <Link href="https://www.youtube.com/embed/aXFSJTjVjw0" >
+                <Link href="https://www.youtube.com/embed/aXFSJTjVjw0">
                   <div
                     className="fancybox video-icon d-flex align-items-center justify-content-center rounded-circle ms-3"
                     rel="noopener noreferrer"
                   >
-                    <i className="fa-solid fa-play"></i>
+                    <i className="fa-solid fa-play" />
                   </div>
                 </Link>
                 <div className="card-box text-center">
-                  <h3 className="main-count fw-500">0<span className="counter">7</span>+</h3>
-                  <p className="fs-20">Years Experience <br />with proud.</p>
+                  <h3 className="main-count fw-500">
+                    0<span className="counter">7</span>+
+                  </h3>
+                  <p className="fs-20">
+                    Years Experience <br />
+                    with proud.
+                  </p>
                 </div>
                 <Image
                   src="/images/assets/screen_01.png"
@@ -73,8 +78,8 @@ const FeatureSectionTwo = () => {
                   </Link>
                   <Link href="/contact">
                     <div className="btn-three mt-20">
-                      <span>Request a Callback</span>{" "}
-                      <i className="fa-light fa-arrow-right-long"></i>
+                      <span>Request a Callback</span>{' '}
+                      <i className="fa-light fa-arrow-right-long" />
                     </div>
                   </Link>
                 </div>

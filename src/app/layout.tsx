@@ -3,8 +3,12 @@ import '@/styles/globals.css';
 import '@/styles/main.css';
 
 import { Inter } from 'next/font/google';
+import {
+  ColorSchemeScript,
+  MantineProvider,
+  mantineHtmlProps,
+} from '@mantine/core';
 
-import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
 import type { ChildrenProps } from '@/types';
 import { theme } from '@/config/maintineTheme';
 import { ReduxProvider } from '@/providers/ReduxProvider';
@@ -23,9 +27,7 @@ export default async function RootLayout({ children }: ChildrenProps) {
       </head>
       <body className={`${inter.className}`}>
         <ReduxProvider>
-          <MantineProvider theme={theme}>
-            {children}
-          </MantineProvider>
+          <MantineProvider theme={theme}>{children}</MantineProvider>
         </ReduxProvider>
       </body>
     </html>

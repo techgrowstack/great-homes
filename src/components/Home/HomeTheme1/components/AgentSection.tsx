@@ -1,38 +1,38 @@
-import Link from "next/link";
-import Image from "next/image";
-import Slider from "react-slick";
+import Link from 'next/link';
+import Image from 'next/image';
+import Slider from 'react-slick';
 
 const AgentSection = () => {
   const agents = [
     {
-      name: "Mark Filo",
-      title: "CEO & Founder",
-      img: "/images/agent/img_01.jpg",
-      link: "/agent_details",
+      name: 'Mark Filo',
+      title: 'CEO & Founder',
+      img: '/images/agent/img_01.jpg',
+      link: '/agent_details',
     },
     {
-      name: "Chris Matial",
-      title: "Retailer",
-      img: "/images/agent/img_02.jpg",
-      link: "/agent_details",
+      name: 'Chris Matial',
+      title: 'Retailer',
+      img: '/images/agent/img_02.jpg',
+      link: '/agent_details',
     },
     {
-      name: "Jubayer Al Hasan",
-      title: "Marketing Expert",
-      img: "/images/agent/img_03.jpg",
-      link: "/agent_details",
+      name: 'Jubayer Al Hasan',
+      title: 'Marketing Expert',
+      img: '/images/agent/img_03.jpg',
+      link: '/agent_details',
     },
     {
-      name: "Jannatul Ferdaus",
-      title: "Broker",
-      img: "/images/agent/img_04.jpg",
-      link: "/agent_details",
+      name: 'Jannatul Ferdaus',
+      title: 'Broker',
+      img: '/images/agent/img_04.jpg',
+      link: '/agent_details',
     },
     {
-      name: "Chris Matial",
-      title: "Broker",
-      img: "/images/agent/img_05.jpg",
-      link: "/agent_details",
+      name: 'Chris Matial',
+      title: 'Broker',
+      img: '/images/agent/img_05.jpg',
+      link: '/agent_details',
     },
   ];
 
@@ -45,7 +45,7 @@ const AgentSection = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows:false,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024, // For tablets
@@ -93,7 +93,7 @@ const AgentSection = () => {
           <div className="wrapper position-relative z-1">
             <Slider {...sliderSettings}>
               {agents.map((agent, index) => (
-                <div key={index}>
+                <div key={agent.name}>
                   <div className="agent-card-one position-relative p-4">
                     <div className="img border-20">
                       <Image

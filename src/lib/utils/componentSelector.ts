@@ -20,4 +20,4 @@ export const getHomeComponent = (themeNumber: number) => {
 //   return variants[variantNumber] || Header1;
 // };
 
-// Add similar functions for other component types 
+// Add similar functions for other component types

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const FeatureSectionThree = () => {
   return (
@@ -17,7 +17,7 @@ const FeatureSectionThree = () => {
                     alt="Title Shape"
                     width={260}
                     height={17}
-                  />{" "}
+                  />{' '}
                   on your home.
                 </h3>
                 <p className="fs-24 color-dark">
@@ -31,10 +31,10 @@ const FeatureSectionThree = () => {
                   placeholder="Your Email Address..."
                   className="form-input"
                 />
-                <button className="form-button">Find out</button>
+                <button type="button" className="form-button">Find out</button>
               </form>
               <div className="fs-16 mt-10 opacity-75">
-                *For accurate info please{" "}
+                *For accurate info please{' '}
                 <Link
                   href="/contact"
                   className="fst-italic color-dark text-decoration-underline"
@@ -49,9 +49,9 @@ const FeatureSectionThree = () => {
               <div
                 className="img-bg"
                 style={{
-                  backgroundImage: "url(/images/media/img_11.jpg)",
+                  backgroundImage: 'url(/images/media/img_11.jpg)',
                 }}
-              ></div>
+              />
               <div className="card-one">
                 <div className="text text-center z-1">
                   <h6>Your estimate is in!</h6>

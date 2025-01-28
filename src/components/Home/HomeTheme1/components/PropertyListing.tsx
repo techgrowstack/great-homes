@@ -11,7 +11,11 @@ const PropertyListing: React.FC = () => {
       baths: '02 bath',
       price: '$3,280/m',
       tag: 'FOR RENT',
-      images: ['images/listing/img_01.jpg', 'images/listing/img_01.jpg', 'images/listing/img_01.jpg'],
+      images: [
+        'images/listing/img_01.jpg',
+        'images/listing/img_01.jpg',
+        'images/listing/img_01.jpg',
+      ],
       link: 'listing_details_01.html',
     },
     {
@@ -23,7 +27,11 @@ const PropertyListing: React.FC = () => {
       baths: '02 bath',
       price: '$28,100.00',
       tag: 'FOR SELL',
-      images: ['images/listing/img_02.jpg', 'images/listing/img_03.jpg', 'images/listing/img_01.jpg'],
+      images: [
+        'images/listing/img_02.jpg',
+        'images/listing/img_03.jpg',
+        'images/listing/img_01.jpg',
+      ],
       link: 'listing_details_01.html',
     },
     {
@@ -35,7 +43,11 @@ const PropertyListing: React.FC = () => {
       baths: '02 bath',
       price: '$42,500.00',
       tag: 'FOR SELL',
-      images: ['images/listing/img_03.jpg', 'images/listing/img_02.jpg', 'images/listing/img_01.jpg'],
+      images: [
+        'images/listing/img_03.jpg',
+        'images/listing/img_02.jpg',
+        'images/listing/img_01.jpg',
+      ],
       link: 'listing_details_01.html',
     },
     {
@@ -47,9 +59,13 @@ const PropertyListing: React.FC = () => {
       baths: '02 bath',
       price: '$3,280/m',
       tag: 'FOR RENT',
-      images: ['images/listing/img_04.jpg', 'images/listing/img_01.jpg', 'images/listing/img_02.jpg'],
+      images: [
+        'images/listing/img_04.jpg',
+        'images/listing/img_01.jpg',
+        'images/listing/img_02.jpg',
+      ],
       link: 'listing_details_01.html',
-    }
+    },
   ];
 
   return (
@@ -57,17 +73,39 @@ const PropertyListing: React.FC = () => {
       <div className="container">
         <div className="position-relative">
           <div className="title-one text-center text-lg-start mb-45 xl-mb-30 lg-mb-20 wow fadeInUp">
-            <h3>New <span>Listings <img src="/images/shape/title_shape_03.svg" alt="" className="lazy-img" /></span></h3>
-            <p className="fs-22 mt-xs">Explore latest & featured properties for sale.</p>
+            <h3>
+              New{' '}
+              <span>
+                Listings{' '}
+                <img
+                  src="/images/shape/title_shape_03.svg"
+                  alt=""
+                  className="lazy-img"
+                />
+              </span>
+            </h3>
+            <p className="fs-22 mt-xs">
+              Explore latest & featured properties for sale.
+            </p>
           </div>
           <div className="row gx-xxl-5">
-            {listings.map((listing) => (
-              <div key={listing.id} className="col-lg-4 col-md-6 d-flex mt-40 wow fadeInUp">
+            {listings.map(listing => (
+              <div
+                key={listing.id}
+                className="col-lg-4 col-md-6 d-flex mt-40 wow fadeInUp"
+              >
                 <div className="listing-card-one border-25 h-100 w-100">
                   <div className="img-gallery p-15">
                     <div className="position-relative border-25 overflow-hidden">
-                      <div className={`tag ${listing.tag === 'FOR RENT' ? 'border-25' : 'sale border-25'}`}>{listing.tag}</div>
-                      <div id={`carousel${listing.id}`} className="carousel slide">
+                      <div
+                        className={`tag ${listing.tag === 'FOR RENT' ? 'border-25' : 'sale border-25'}`}
+                      >
+                        {listing.tag}
+                      </div>
+                      <div
+                        id={`carousel${listing.id}`}
+                        className="carousel slide"
+                      >
                         <div className="carousel-indicators">
                           {listing.images.map((_, index) => (
                             <button
@@ -83,8 +121,14 @@ const PropertyListing: React.FC = () => {
                         </div>
                         <div className="carousel-inner">
                           {listing.images.map((image, index) => (
-                            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval="1000000">
-                              <a href={listing.link} className="d-block"><img src={image} className="w-100" alt="..." /></a>
+                            <div
+                              key={index}
+                              className={`carousel-item ${index === 0 ? 'active' : ''}`}
+                              data-bs-interval="1000000"
+                            >
+                              <a href={listing.link} className="d-block">
+                                <img src={image} className="w-100" alt="..." />
+                              </a>
                             </div>
                           ))}
                         </div>
@@ -92,25 +136,52 @@ const PropertyListing: React.FC = () => {
                     </div>
                   </div>
                   <div className="property-info p-25">
-                    <a href={listing.link} className="title tran3s">{listing.title}</a>
+                    <a href={listing.link} className="title tran3s">
+                      {listing.title}
+                    </a>
                     <div className="address">{listing.address}</div>
                     <ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between">
                       <li className="d-flex align-items-center">
-                        <img src="/images/icon/icon_04.svg" alt="" className="lazy-img icon me-2" height={18} width={18} />
+                        <img
+                          src="/images/icon/icon_04.svg"
+                          alt=""
+                          className="lazy-img icon me-2"
+                          height={18}
+                          width={18}
+                        />
                         <span className="fs-16">{listing.sqft}</span>
                       </li>
                       <li className="d-flex align-items-center">
-                        <img src="/images/icon/icon_05.svg" alt="" className="lazy-img icon me-2" height={19} width={28} />
+                        <img
+                          src="/images/icon/icon_05.svg"
+                          alt=""
+                          className="lazy-img icon me-2"
+                          height={19}
+                          width={28}
+                        />
                         <span className="fs-16">{listing.beds}</span>
                       </li>
                       <li className="d-flex align-items-center">
-                        <img src="/images/icon/icon_06.svg" alt="" className="lazy-img icon me-2" height={18} width={18} />
+                        <img
+                          src="/images/icon/icon_06.svg"
+                          alt=""
+                          className="lazy-img icon me-2"
+                          height={18}
+                          width={18}
+                        />
                         <span className="fs-16">{listing.baths}</span>
                       </li>
                     </ul>
                     <div className="pl-footer top-border d-flex align-items-center justify-content-between">
-                      <strong className="price fw-500 color-dark">{listing.price}</strong>
-                      <a href={listing.link} className="btn-four rounded-circle"><i className="bi bi-arrow-up-right" /></a>
+                      <strong className="price fw-500 color-dark">
+                        {listing.price}
+                      </strong>
+                      <a
+                        href={listing.link}
+                        className="btn-four rounded-circle"
+                      >
+                        <i className="bi bi-arrow-up-right" />
+                      </a>
                     </div>
                   </div>
                 </div>

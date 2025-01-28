@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const FooterComponent2 = () => {
-  return (
-    <div>FooterComponent2</div>
-  )
-}
+  return <div>FooterComponent2</div>;
+};
 
-export default FooterComponent2
+export default FooterComponent2;
